@@ -131,12 +131,17 @@
 					},
 					sync: {
 						key: mooSync.key,
+						scales: ['x', null],
 						setSeries: true,
 						match: [matchSyncKeys, matchSyncKeys],
 						filters: {
 							pub: upDownFilter,
 						}
 					},
+					drag: {
+						x: true,
+						y: true,
+					}
 				};
 
 				const opts = {
